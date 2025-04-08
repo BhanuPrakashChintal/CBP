@@ -25,6 +25,7 @@ export default function ContactPageClient() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({})
+  const [showConfirmation, setShowConfirmation] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
@@ -44,11 +45,13 @@ export default function ContactPageClient() {
     e.preventDefault()
     setIsSubmitting(true)
     setFieldErrors({})
+    setShowConfirmation(false)
 
     try {
       const result = await sendContactEmail(formState)
 
       if (result.success) {
+        setShowConfirmation(true)
         toast({
           title: "Message sent!",
           description: "Thank you for reaching out. I'll get back to you soon.",
@@ -317,6 +320,24 @@ export default function ContactPageClient() {
                     <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
                   </svg>
                   Sending...
+                </>
+              ) : showConfirmation ? (
+                <>
+                  <svg
+                    className="mr-2 h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                  Message Sent!
                 </>
               ) : (
                 <>
