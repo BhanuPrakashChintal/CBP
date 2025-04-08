@@ -32,7 +32,7 @@ export default function StackPageClient() {
       name: "Databases",
       technologies: [
         { name: "Firestore", description: "NoSQL document database by Firebase" },
-        { name: "Realtime Database", description: "Real-time syncing database by Firebase" },
+        { name: "RealtimeDatabase", description: "Real-time syncing database by Firebase" },
         { name: "Supabase", description: "PostgreSQL database with real-time capabilities" },
       ],
     },
@@ -41,7 +41,8 @@ export default function StackPageClient() {
       technologies: [
         { name: "Git", description: "Version control system" },
         { name: "GitHub", description: "Code hosting platform" },
-        { name: "VS Code", description: "Code editor" },
+        { name: "VSCode", description: "Code editor" },
+        { name: "Notion", description: "Project management and documentation" },
       ],
     },
   ]
