@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import type React from "react"
+import { useTheme } from "next-themes"
 
 interface TechLogoProps {
   name: string
@@ -8,6 +9,8 @@ interface TechLogoProps {
 }
 
 export function TechLogo({ name, className }: TechLogoProps) {
+  const { theme } = useTheme()
+  
   const logos: Record<string, React.ReactNode> = {
     Flutter: (
       <Image
@@ -101,7 +104,7 @@ export function TechLogo({ name, className }: TechLogoProps) {
     ),
     GitHub: (
       <Image
-        src="/tech-logos/github.png"
+        src={theme === "dark" ? "/tech-logos/github-dark.png" : "/tech-logos/github-light.png"}
         alt="GitHub"
         width={128}
         height={128}
