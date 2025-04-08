@@ -29,7 +29,7 @@ export default function ProjectsPageClient() {
       description:
         "Travel Together is a travel app that simplifies finding and exploring appealing travel spots. It offers personalized itineraries with an AI-driven trip planner and easy navigation via geolocation. The app features a user-friendly admin interface, cohesive design, and secure backend services through Firebase. By continuously developing and testing, Travel Together ensures a seamless user experience, aggregating data from various sources, highlighting hidden gems, and providing efficient travel planning and navigation.",
       tags: ["Flutter", "Firebase", "AI Integration", "Admin Dashboard"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/traveltogetherMockups.png?height=400&width=600",
       link: "https://github.com/BhanuPrakashChintal/TravelTogether",
       external: true,
       teamSize: 2,
@@ -42,7 +42,7 @@ export default function ProjectsPageClient() {
       description:
         "GeeksforGeeks AU is a website designed to provide insights and notifications for the GeeksforGeeks University club. The club website offers a platform to stay updated with events and activities. The site is built using HTML, Bootstrap CSS, JavaScript, Cloudflare CMS, GitHub, and Google Firebase. This tech stack ensures a responsive and dynamic user experience while maintaining efficient content management and hosting.",
       tags: ["HTML", "Bootstrap", "JavaScript", "Firebase", "Cloudflare CMS"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/gfgMockups.png?height=400&width=600",
       link: "https://gfg-au.web.app",
       external: true,
       teamSize: 1,
@@ -54,37 +54,37 @@ export default function ProjectsPageClient() {
       description:
         "The Student Digital Library is a web application designed to provide free access to academic materials, notes, previous question papers, and other handouts. It organizes resources by department and stream, making it easy for students to find what they need. Built with HTML, CSS, and JavaScript, and using Supabase for backend services, the application is hosted on Google Sites. The development process includes designing a user-friendly interface, building and testing the application, and regularly updating content.",
       tags: ["HTML", "CSS", "JavaScript", "Supabase", "Google Sites"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/sdlMockups.png?height=400&width=600",
       link: "https://sites.google.com/view/studentsdigitallibrary",
       external: true,
       teamSize: 1,
       period: "Jan 2022",
       category: "Web Development",
     },
-    {
-      title: "Flutter IoT Dashboard",
-      description:
-        "Developed during my internship at CyberMyte Technology Solutions, this IoT dashboard app provides real-time monitoring and control of connected devices. Features include authentication, metrics visualization with charts, and comprehensive device management.",
-      tags: ["Flutter", "Firebase", "Realtime Database", "IoT", "Charts"],
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects/iot-dashboard",
-      teamSize: 3,
-      period: "Oct 2024 - Present",
-      note: "Internship Project",
-      category: "IoT",
-    },
-    {
-      title: "ASR Mobile Application",
-      description:
-        "Developed during my internship at Swecha, this Flutter mobile application connects to an Automatic Speech Recognition (ASR) model built with Python and FastAPI. The app allows users to convert speech to text with high accuracy and low latency.",
-      tags: ["Flutter", "Python", "FastAPI", "ASR", "Figma", "FlutterFlow"],
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects/asr-app",
-      teamSize: 2,
-      period: "May 2024 - Jun 2024",
-      note: "Internship Project",
-      category: "Mobile App",
-    },
+    // {
+    //   title: "Flutter IoT Dashboard",
+    //   description:
+    //     "Developed during my internship at CyberMyte Technology Solutions, this IoT dashboard app provides real-time monitoring and control of connected devices. Features include authentication, metrics visualization with charts, and comprehensive device management.",
+    //   tags: ["Flutter", "Firebase", "Realtime Database", "IoT", "Charts"],
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   link: "/projects/iot-dashboard",
+    //   teamSize: 3,
+    //   period: "Oct 2024 - Present",
+    //   note: "Internship Project",
+    //   category: "IoT",
+    // },
+      // {
+      //   title: "ASR Mobile Application",
+      //   description:
+      //     "Developed during my internship at Swecha, this Flutter mobile application connects to an Automatic Speech Recognition (ASR) model built with Python and FastAPI. The app allows users to convert speech to text with high accuracy and low latency.",
+      //   tags: ["Flutter", "Python", "FastAPI", "ASR", "Figma", "FlutterFlow"],
+      //   image: "/placeholder.svg?height=400&width=600",
+      //   link: "/projects/asr-app",
+      //   teamSize: 2,
+      //   period: "May 2024 - Jun 2024",
+      //   note: "Internship Project",
+      //   category: "Mobile App",
+      // },
   ]
 
   const categories = Array.from(new Set(projects.map((project) => project.category)))
